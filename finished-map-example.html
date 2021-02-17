@@ -18,8 +18,8 @@
     <script>
     function initMap() {
       var myOptions = {
-        zoom: 8,
-        center: {lat: 53.480759, lng: -2.242631},
+        zoom: 14,
+        center: {lat:  40.5905198, lng: 140.4610006},
         mapTypeId: google.maps.MapTypeId.TERRAIN,
         disableDefaultUI: true,
         // Step 4. Customize displayed controls
@@ -34,14 +34,14 @@
       var iconBase = 'https://maps.google.com/mapfiles/kml/shapes/';
 
       var marker = new google.maps.Marker({
-        position: {lat: 53.480759, lng: -2.242631},
+        position: {lat: 40.5905198, lng: 140.4610006},
         icon: iconBase + 'flag_maps.png',
         map: map
       });
 
       // Step 3. Add info window
 
-      var contentString = '<div id="content"><h2 id="firstHeading" class="firstHeading">Custom info window</h2><p>This is a cool custom info window.</p></div>';
+      var contentString = '<div id="content"><h2 id="firstHeading" class="firstHeading">あけぼの公園</h2><p>青森県弘前市にある公園。小学生の頃、毎日のように友達と遊んだ思い出の地。</p></div>';
 
       var infowindow = new google.maps.InfoWindow({
         content: contentString
@@ -52,7 +52,7 @@
       });
     }
     </script>
-    <script src="https://maps.googleapis.com/maps/api/js?key=ENTER-API-KEY-HERE&callback=initMap"
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAiV2ZbFIYuD3N4hzGLstSn2e4ZG5A7QlU&callback=initMap"
     async defer></script>
   </body>
 </html>
